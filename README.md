@@ -190,14 +190,14 @@ docker save onboard-bot -o onboard-bot.tar
 ### 2. Передать на сервер
 
 ```powershell
-scp onboard-bot.tar root@193.233.174.246:/root/
-scp .env root@193.233.174.246:/root/
+scp onboard-bot.tar root@xxx.xxx.xxx.xxx:/root/
+scp .env root@xxx.xxx.xxx.xxx:/root/
 ```
 
 ### 3. На сервере запустить
 
 ```bash
-ssh root@193.233.174.246
+ssh root@xxx.xxx.xxx.xxx
 
 # Загрузить образ
 docker load < /root/onboard-bot.tar
